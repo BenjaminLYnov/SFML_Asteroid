@@ -2,19 +2,18 @@
 #define VECTOR2D_H
 #pragma once
 
-#include "../Include/MainInclude.hpp"
-	
-class Vector2D  
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
+
+class Vector2D
 {
-	private:
+private:
+public:
+	Vector2D();
+	~Vector2D();
 
-	public:
-
-		Vector2D();
-		~Vector2D();
-
-		float Distance(Vector2f vec1, Vector2f vec2);
-		Vector2f Normalized(Vector2f vec1, Vector2f vec2);
-
+	static float Distance(Vector2f vec1, Vector2f vec2);
+	static Vector2f Normalized(Vector2f vec);
 };
 #endif

@@ -1,4 +1,6 @@
-#include "Include/AllProjectInclude.hpp"
+#include "./Player/Player.hpp"
+#include "./Obstacle/Asteroid.hpp"
+#include <SFML/Graphics.hpp>
 
 #define WIDTH 1920
 #define HEIGHT 1080
@@ -7,7 +9,6 @@
 
 int main()
 {
-    
     RenderWindow window(VideoMode(WIDTH, HEIGHT), "Astéroïds");
     window.setFramerateLimit(60);
 

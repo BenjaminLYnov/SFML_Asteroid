@@ -3,7 +3,7 @@
 #pragma once
 
 #include <iostream>
-#include "SfmlInclude.hpp"
+#include <SFML/Audio.hpp>
 
 using namespace std;
 

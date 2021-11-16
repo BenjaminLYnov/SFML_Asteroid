@@ -2,8 +2,12 @@
 #define ASTEROID_H
 #pragma once
 
-#include "../Include/MainInclude.hpp"
 #include "../Math/Vector2D.hpp"
+#include "../SFML/SfmlImage.hpp"
+#include "../SFML/SfmlAudio.hpp"
+#include <chrono>
+
+using namespace sf;
 
 class Asteroid
 {

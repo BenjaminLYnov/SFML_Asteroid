@@ -2,7 +2,10 @@
 #define LASER_H
 #pragma once
 
-#include "../../Include/MainInclude.hpp"
+#include "../../SFML/SfmlImage.hpp"
+#include "../../SFML/SfmlAudio.hpp"
+
+using namespace sf;
 
 #define PI 3.14159265
 

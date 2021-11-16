@@ -2,10 +2,13 @@
 #define PLAYER_H
 #pragma once
 
-#include "../Include/MainInclude.hpp"
 #include "./MovePlayer.hpp"
 #include "../Timer/Timer.hpp"
+#include "../SFML/SfmlImage.hpp"
 #include "./Skills/Skills.hpp"
+
+
+using namespace sf;
 
 class Player
 {

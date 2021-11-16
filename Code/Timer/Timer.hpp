@@ -2,7 +2,7 @@
 #define TIMER_H
 #pragma once
 
-#include "../Include/MainInclude.hpp"
+#include <iostream>
 
 class Timer
 {

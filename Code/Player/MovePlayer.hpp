@@ -2,8 +2,13 @@
 #define MOVEPLAYER_H
 #pragma once
 
-#include "../Include/MainInclude.hpp"
+#include <iostream>
 #include "../Timer/Timer.hpp"
+#include "../SFML/SfmlImage.hpp"
+#include "../SFML/SfmlAudio.hpp"
+
+
+using namespace sf;
 
 class MovePlayer
 {
