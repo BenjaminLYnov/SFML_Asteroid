@@ -5,12 +5,15 @@ LaserShape::LaserShape()
 
     shape.setPointCount(4);
 
-    shape.setPoint(0, Vector2f(-60.f, -10.f));
-    shape.setPoint(1, Vector2f(30.f, -15.f));
-    shape.setPoint(2, Vector2f(30.f, -10.f));
-    shape.setPoint(3, Vector2f(-60.f, -10.f));
+    shape.setPoint(0, Vector2f(0.f, 50.f));
+    shape.setPoint(1, Vector2f(90.f, 50.f));
+    shape.setPoint(2, Vector2f(90.f, 55.f));
+    shape.setPoint(3, Vector2f(0.f, 55.f));
 
     shape.setFillColor(Color(10, 238, 223));
+
+    // shape.setOrigin(Vector2f(0.f, 2.5f));
+    shape.setOrigin(Vector2f(0.f, 52.5f));
 
 }
 

@@ -19,7 +19,7 @@ StartBattleShonenShipOverdrive::StartBattleShonenShipOverdrive()
     shape.setPosition(Vector2f(300.f, 300.f));
     shape.setScale(Vector2f(0.5f, 0.5f));
 
-    shape.setOrigin(Vector2f(-20.f, 60.f));
+    shape.setOrigin(Vector2f(0.f, 45.f));
 
     
 }
