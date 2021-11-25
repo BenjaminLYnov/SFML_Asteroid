@@ -54,12 +54,12 @@ void MovePlayer::inputMove(Event &event)
 
 void MovePlayer::inputRotation(Event &event)
 {
-    if (Keyboard::isKeyPressed(Keyboard::C))
+    if (Keyboard::isKeyPressed(Keyboard::Right))
         rotationRight = true;
     else
         rotationRight = false;
 
-    if (Keyboard::isKeyPressed(Keyboard::X))
+    if (Keyboard::isKeyPressed(Keyboard::Left))
         rotationLeft = true;
     else
         rotationLeft = false;

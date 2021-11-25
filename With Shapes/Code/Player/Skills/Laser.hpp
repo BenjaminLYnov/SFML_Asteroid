@@ -15,7 +15,7 @@ class Laser
 {
 private:
 	bool sent;
-	bool keyJ;
+    bool keySpace;
 	double laserPosX;
 	Vector2f dir;
 

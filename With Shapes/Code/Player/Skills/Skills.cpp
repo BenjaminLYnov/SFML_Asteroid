@@ -2,7 +2,7 @@
 
 Skills::Skills()
 {
-    keyJ = true;
+    keySpace = true;
 }
 
 Skills::~Skills()
@@ -12,14 +12,14 @@ Skills::~Skills()
 
 void Skills::input(Event &event)
 {
-    if (Keyboard::isKeyPressed(Keyboard::J) && keyJ)
+    if (Keyboard::isKeyPressed(Keyboard::Space) && keySpace)
     {
-        keyJ = false;
+        keySpace = false;
         lasers.push_back(Laser());
         // cout <<lasers.size()<< "\n";
     }
-    if (!Keyboard::isKeyPressed(Keyboard::J))
-        keyJ = true;
+    if (!Keyboard::isKeyPressed(Keyboard::Space))
+        keySpace = true;
 }
 
 void Skills::Update()

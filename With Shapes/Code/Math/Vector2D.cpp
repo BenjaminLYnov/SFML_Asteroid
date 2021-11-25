@@ -1,4 +1,5 @@
-#include "Vector2D.hpp"  
+#include "Vector2D.hpp"
+#include <tgmath.h>
 	
 Vector2D::Vector2D()
 {

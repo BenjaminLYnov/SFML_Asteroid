@@ -12,7 +12,7 @@ using namespace sf;
 class Skills
 {
 private:
-	bool keyJ;
+    bool keySpace;
 
 public:
 	Skills();

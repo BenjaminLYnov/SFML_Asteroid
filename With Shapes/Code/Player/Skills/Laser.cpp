@@ -1,33 +1,29 @@
 #include "Laser.hpp"
+#include <tgmath.h>
 
 Laser::Laser()
 {
-    // laserImage = new SfmlImage("ressources/images/laser.png", 389, 129, 0, 0);
-    // laserImage->sprite.setScale(0.2, 0.2);
-
     speedMove = 0;
     speedMove = 20;
     sent = false;
-    keyJ = true;
+    keySpace = true;
 }
 
 Laser::~Laser()
-{
-    // delete laserImage;
-}
+{}
 
 void Laser::inputSendLaser(Event &event, Vector2f target, float rotation)
 {
-    if (Keyboard::isKeyPressed(Keyboard::J) && keyJ)
+    if (Keyboard::isKeyPressed(Keyboard::Space) && keySpace)
     {
         sent = true;
-        keyJ = false;
+        keySpace = false;
         laserShape.shape.setPosition(target);
         laserShape.shape.setRotation(rotation);
         dir = Vector2f((float)cos(rotation * PI / 180), (float)sin(rotation * PI / 180)); // Vecteur Already Normalized
     }
-    if (!Keyboard::isKeyPressed(Keyboard::J))
-        keyJ = true;
+    if (!Keyboard::isKeyPressed(Keyboard::Space))
+        keySpace = true;
 }
 
 void Laser::laserMove()
@@ -42,6 +38,4 @@ void Laser::Update()
 }
 
 void Laser::draw(RenderWindow &window) const
-{
-    // laserImage->draw(window);
-}
+{}

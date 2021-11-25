@@ -12,7 +12,6 @@ LaserShape::LaserShape()
 
     shape.setFillColor(Color(10, 238, 223));
 
-    // shape.setOrigin(Vector2f(0.f, 2.5f));
     shape.setOrigin(Vector2f(0.f, 52.5f));
 
 }
