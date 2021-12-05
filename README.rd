@@ -1,3 +1,5 @@
+MOURGUES PAUL & BENJAMIN LY
+
 To compile this game :
 
 Open the konsole, then go in project game repertory
