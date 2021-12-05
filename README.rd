@@ -18,4 +18,6 @@ python Compile.py
 
 (It doesn't work with double click)
 
+/!\ It's faster to compile with Python /!\ 
+
 Enjoy !
