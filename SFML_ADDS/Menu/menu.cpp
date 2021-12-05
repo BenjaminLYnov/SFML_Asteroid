@@ -26,6 +26,42 @@ void Menu::PrintMenu() {
     text2.setPosition(750, 650);
 }
 
+void Menu::PrintScore() {
+
+    sf::RenderWindow window (sf::VideoMode(700,850), "SCORES");
+    std::string line;
+    std::ifstream myfile;
+
+    // Accede aux scores depuis un fichier txt externe
+
+    myfile.open ("C:/Qt/Projects/SFML_ADDS/PlayerScore/AllScore.txt");
+
+    if (myfile.is_open()) {
+        while (getline(myfile,line)) {
+            getScore += line;
+            getScore += '\n';
+        }
+        myfile.close();
+    }
+    text.setString(getScore);
+    text.setFont(font);
+    text.setCharacterSize(48    );
+    text.setPosition(20, 30);
+
+    while (window.isOpen()) {
+        while ( window.pollEvent(show)) {
+            if(show.key.code == sf::Keyboard::Enter) {
+                window.close();
+                getScore.clear();
+                PrintMenu();
+            }
+        }
+        window.clear();
+        window.draw(text);
+        window.display();
+    }
+}
+
 void Menu::draw() {
 
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML");
@@ -42,7 +78,7 @@ void Menu::draw() {
             //  Appele la fonction qui print le jeu
             }
             else if (event.key.code == sf::Keyboard::Escape) {
-                // fonction qui permet d'afficher les psuedos avec leurs score (en cours)
+                PrintScore();
             }
         }
 
