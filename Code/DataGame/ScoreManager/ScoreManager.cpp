@@ -1,5 +1,6 @@
 #include "ScoreManager.hpp"
 #include <fstream>
+#include <iostream>
 
 int ScoreManager::GetHightestScore()
 {
@@ -54,30 +55,31 @@ std::vector<int> ScoreManager::GetTopScore(int topNumber)
 std::vector<std::string> ScoreManager::GetTopPseudo(int topNumber)
 {
     std::ifstream file("ressources/scores.txt");
-    std::vector<int> allScore;
+    std::vector<int> topScore = GetTopScore(topNumber);
     std::vector<std::string> topPseudo;
-    int numberScore;
+    std::vector<std::string> topLine;
 
     if (file.is_open())
     {
         std::string line;
         while (std::getline(file, line))
-        {
-            allScore.push_back(GetScore(line));
-            topPseudo.push_back(GetPseudo(line));
-        }
+            topLine.push_back(line);
         file.close();
     }
 
-    for (int j = 0; j < allScore.size(); j++)
+    for (const int score : topScore)
     {
-        if (GetHightestNumber(allScore) == allScore[j])
+        for (int i = 0; i < topLine.size(); i++)
         {
-            allScore.erase(allScore.begin() + j);
-            topPseudo.erase(topPseudo.begin() + j);
-            j = 0;
+            if (score == GetScore(topLine[i]))
+            {
+                topPseudo.push_back(GetPseudo(topLine[i]));
+                topLine.erase(topLine.begin() + i);
+                break;
+            }
         }
     }
+
     return topPseudo;
 }
 

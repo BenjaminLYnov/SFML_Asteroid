@@ -7,4 +7,14 @@ g++ -std=c++14 -O3 main.cpp DataGame/DataGame.cpp DataGame\Asteroid/Asteroid.cpp
 
 <It take a while>
 
+Then you can lauch Game.exe 
+(You can double click on it)
+
 cd ./../Game && .\Game
+
+You can also compile with the Python file Compile.py :
+python Compile.py
+
+(It doesn't work with double click)
+
+Enjoy !
