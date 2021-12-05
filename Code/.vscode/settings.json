@@ -68,7 +68,10 @@
     "xlocmes": "cpp",
     "xlocmon": "cpp",
     "xloctime": "cpp",
-    "complex": "cpp"
+    "complex": "cpp",
+    "fstream": "cpp",
+    "deque": "cpp",
+    "set": "cpp"
   },
   "C_Cpp_Runner.warnings": [
     "-Wall",
