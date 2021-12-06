@@ -13,7 +13,7 @@ public:
 	void Update(sf::RenderWindow &window);
 	void Draw(sf::RenderWindow &window) const;
 	
-	int GetScore();
+	int &GetScore();
 	bool PlayerIsDead();
 
 private:
