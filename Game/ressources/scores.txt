@@ -1,4 +1,5 @@
 bobo:130
 roro:530
 Benjamin:9530
-jofrey:9530
+kiko:110
+dodo:180

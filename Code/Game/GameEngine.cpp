@@ -69,7 +69,7 @@ void GameEngine::Draw(sf::RenderWindow &window) const
     menu->Draw(window);
 }
 
-int &GameEngine::GetScore()
+int GameEngine::GetScore()
 {
     return uhd->GetScore();
 }
