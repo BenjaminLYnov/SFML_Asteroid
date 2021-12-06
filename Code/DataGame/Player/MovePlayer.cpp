@@ -1,5 +1,6 @@
 #include "MovePlayer.hpp"
 #include <SFML/Window/Keyboard.hpp>
+#include <math.h>
 
 MovePlayer::MovePlayer()
 {
