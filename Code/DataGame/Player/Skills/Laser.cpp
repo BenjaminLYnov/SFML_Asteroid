@@ -1,6 +1,6 @@
 #include "Laser.hpp"
 #include "../../Wraparound/Wraparound.hpp"
-include <math.h>
+#include <math.h>
 
 Laser::Laser()
 {
