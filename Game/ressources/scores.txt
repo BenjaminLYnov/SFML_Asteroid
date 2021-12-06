@@ -3,3 +3,5 @@ roro:530
 Benjamin:9530
 kiko:110
 dodo:180
+nano:270
+s:0
